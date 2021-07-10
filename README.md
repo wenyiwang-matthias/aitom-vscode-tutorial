@@ -61,7 +61,7 @@ Make sure your remote server has X server running.
   }
   ```
 
-## Start Windows X Server
+### <a name="startxsrv"></a> Start Windows X Server
 
 - Start your [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/).
   - Select your preferred display settings, click *Next*.
@@ -84,7 +84,7 @@ Make sure your remote server has X server running.
 
 ### Windows 10
 
-1. [Start Windows X Server](## Start Windows X Server) 
+1. [Start Windows X Server](#startxsrv) 
 2. Open VS Code and connect to your host.
 
 ### Linux Distributions: Ubuntu
