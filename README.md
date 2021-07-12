@@ -26,7 +26,21 @@ The server should be Linux based.
 
 ### Linux Distributions: Ubuntu 20.04
 
-PLACEHOLDER
+* Install the same extensions on your VS Code: [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit).
+
+* Microsoft's official SSH tutorial: [Remote development over SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial)  covers how to get started with these extensions. A more detailed tutorial about setting up SSH key-based authentication is available here; [Configuring SSH Key-based Authentication on Ubuntu 20.04]([Configuring SSH Key-based Authentication on Ubuntu 20.04 – Answertopia](https://www.answertopia.com/ubuntu/configuring-ssh-key-based-authentication-on-ubuntu/)).
+
+* First, install and start the SSH service: 
+
+* ```
+    # apt install openssh-server
+    # systemctl start sshd.service
+    # systemctl enable sshd.service
+    ```
+
+* Then generate a key pair with command *ssh-keygen* and copy the public key onto the remote server with *ssh-copy-id*.
+
+* Your key-based authentication  should be set up at this point, follow Microsoft's extension tutorial to connect to the remote server.
 
 ### MacOS X
 
