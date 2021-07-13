@@ -38,9 +38,9 @@ The server should be Linux based.
   # systemctl enable sshd.service
   ```
 
-* Then generate a key pair with command *ssh-keygen* and copy the public key onto the remote server with *ssh-copy-id*.
+* Then generate a key pair with command *ssh-keygen* and copy the public key onto the remote server with *ssh-copy-id*. (Note: this is for general setup. DM server admin with your public key and let him/her set it up for you.)
 
-* Your key-based authentication  should be set up at this point, follow Microsoft's extension tutorial to connect to the remote server.
+* Your key-based authentication should be set up at this point, follow Microsoft's extension tutorial to connect to the remote server.
 
 ### MacOS X
 
