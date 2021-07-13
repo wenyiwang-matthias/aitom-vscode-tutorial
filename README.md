@@ -62,12 +62,7 @@ Make sure your remote server has X server running.
 
 ### MacOS X
 
-+ Install [XQuartz](https://www.xquartz.org).
-+ Start [XQuartz](https://www.xquartz.org) and give the server access to your local X Server.
-
-```bash
-% xhost + server_ip
-```
++ X11 is no longer shipped with the Mac, so we have to install the [XQuartz](https://www.xquartz.org) project which will provide X11 server and client libraries.
 
 ## Configure Remote - SSH X11 Forwarding
 
@@ -88,6 +83,15 @@ Make sure your remote server has X server running.
   - Select your preferred display settings, click *Next*.
   - Select start no client, click *Next*.
   - Click *Next* and click *Finish*, you should be all set.
+
+### <a name="startxquartz"></a> Start MacOS X Server
+
++ Start your [XQuartz](https://www.xquartz.org).
+  + Give the server access to your local X Server.
+
+```bash
+% xhost + server_ip
+```
 
 ## Configure and Connect to your Host Server
 
@@ -114,5 +118,5 @@ PLACEHOLDER
 
 ### MacOS
 
-1. Start XQuartz.
+1. [Start XQuartz](#startxquartz).
 2. Open VS Code and connect to your host.
