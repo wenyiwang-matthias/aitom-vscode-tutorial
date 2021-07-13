@@ -32,11 +32,11 @@ The server should be Linux based.
 
 * First, install and start the SSH service: 
 
-* ```
-    # apt install openssh-server
-    # systemctl start sshd.service
-    # systemctl enable sshd.service
-    ```
+  ```
+  # apt install openssh-server
+  # systemctl start sshd.service
+  # systemctl enable sshd.service
+  ```
 
 * Then generate a key pair with command *ssh-keygen* and copy the public key onto the remote server with *ssh-copy-id*.
 
@@ -58,7 +58,7 @@ Make sure your remote server has X server running.
 
 ### Linux Distributions: Ubuntu 20.04
 
-~~PLACEHOLDER~~ 
+* Ubuntu and most other linux distros have X services installed, so no extra step required. 
 
 ### MacOS X
 
@@ -84,14 +84,22 @@ Make sure your remote server has X server running.
   - Select start no client, click *Next*.
   - Click *Next* and click *Finish*, you should be all set.
 
+### <a name="startXorgandaddxhost"></a> Start Linux X Service and Allowing Remote Client's Access
+
+* With X service already running, simply type the following command:
+
+  ```
+  $ xhost + <address of the server>
+  ```
+
 ### <a name="startxquartz"></a> Start MacOS X Server
 
 + Start your [XQuartz](https://www.xquartz.org).
   + Give the server access to your local X Server.
-
-```bash
-% xhost + server_ip
-```
+  
+    ```
+    % xhost + server_ip
+    ```
 
 ## Configure and Connect to your Host Server
 
@@ -114,7 +122,7 @@ Make sure your remote server has X server running.
 
 ### Linux Distributions: Ubuntu
 
-PLACEHOLDER
+1. No hassle, connect to your host in VS Code and enjoy!
 
 ### MacOS
 
