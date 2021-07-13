@@ -44,7 +44,9 @@ The server should be Linux based.
 
 ### MacOS X
 
-PLACERHOLDER
++ Install the same extensions on your VS Code: [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and [Remote - SSH: Editing Configuration Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit).
++ Please also check out the **Remote - SSH** tutorial: [Remote development over SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial) 
++ You can generate a key pair the same way above. 
 
 ## Install X Server Client
 
@@ -60,7 +62,12 @@ Make sure your remote server has X server running.
 
 ### MacOS X
 
-~~PLACEHOLDER~~ 
++ Install [XQuartz](https://www.xquartz.org).
++ Start [XQuartz](https://www.xquartz.org) and give the server access to your local X Server.
+
+```bash
+% xhost + server_ip
+```
 
 ## Configure Remote - SSH X11 Forwarding
 
@@ -107,4 +114,5 @@ PLACEHOLDER
 
 ### MacOS
 
-PLACEHOLDER
+1. Start XQuartz.
+2. Open VS Code and connect to your host.
