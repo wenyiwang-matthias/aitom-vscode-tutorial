@@ -2,8 +2,6 @@
 
 ## Install AITom on your Server
 
-### GENERAL STEPS...
-
 The server should be Linux based.
 
 ## Install SSH Extensions on Visual Studio Code
